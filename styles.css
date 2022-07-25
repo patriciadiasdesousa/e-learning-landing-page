@@ -1,0 +1,203 @@
+/* Site Stylesheet
+	1. Reset
+  2. Global Styles
+  3. Typography Styles
+  4. Structure Styles
+  5. Module Styles
+  6. Component Styles
+  7. Page Styles
+
+/* 1. Reset
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Global Styles
+======================================== */
+html {
+		background-color: #624e4e;
+    background-image: url(../02_CODE/assets/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 700px -100px;
+}
+
+body {
+  width: 1110px;
+  margin: auto;
+}
+
+.cards a:link {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125em; /* 18px */
+  font-weight: 700;
+  color: #F74780;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+/* 3. Typography Styles
+======================================== */
+
+h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3.5em; /* 56px */
+  font-weight: 800;
+  color: #13183F;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.5em; /* 40px */
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2em; /* 32px */
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.5em; /* 24px */
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+p {
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+p.body-m {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125em; /* 18px */
+  font-weight: 400;
+  color: #83869A;
+  line-height: 1.5;
+}
+
+p.body-s {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1em; /* 16px */
+  font-weight: 800;
+  color: #83869A;
+  line-height: 1.5;
+}
+
+/* 4. Structure Styles
+======================================== */
+
+.flex {
+  display: flex;
+}
+
+.hero {
+  width: 50%;
+  min-height: 730px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+header {
+  height: 110px;
+  background-color: #83869A;
+}
+
+.column-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column-flex-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 32%;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  align-items: flex-end;
+}
+
+/* 5. Module Styles
+======================================== */
+
+/* 6. Component Styles
+======================================== */
+
+.button-2 {
+  background:
+  linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  padding: 20px 30px;
+  margin-top: 40px;
+  border-radius: 2.5em;
+  border: 0;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125em; /* 18px */
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-2:hover {
+  background:
+  linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+  linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.card-intro {
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  border-radius: 1em;
+  padding-left: 32px;
+  padding-top: 64px;
+  padding-right: 34px;
+  color: #ffffff;
+  height: 346px;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 15px;
+  padding: 0 32px;
+  height: 322px;
+}
+
+.card h4 {
+  padding-bottom: 20px;
+}
+
+.card .body-m {
+  padding-bottom: 30px;
+}
+
+.card a {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125em; /* 18px */
+  font-weight: 700;
+  color: #F74780;
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+.card-icon {
+  width: 56px;
+  height: 56px;
+  position: relative;
+  top: -35px;
+  bottom: -10px;
+}
+
+/* 7. Page Styles
+======================================== */
+
+.hero .body-m {
+  margin-top: 30px;
+}
