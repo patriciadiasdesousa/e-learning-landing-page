@@ -7,6 +7,7 @@
   6. STATE
   7. THEME
 
+  */
 
 /* 	1. RESET
 ======================================== */
@@ -21,39 +22,49 @@
 /*   2. BASE
 ======================================== */
 html {
-		background-color: #FFFFFF;
-    background-image: url(../02_CODE/assets/image-hero-desktop.png);
-    background-repeat: no-repeat;
-    background-position: 700px -100px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FFFFFF;
 }
 
 body {
-  margin: auto;
+  margin: 0 auto;
+  background-image: url(../02_CODE/assets/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 700px -100px;
 }
 
-main {
-  width: 100%;
-  background: linear-gradient(180deg, rgba(255,255,255,0), rgba(240,241,255,1));
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+
+  body {
+    background-image: url(../02_CODE/assets/image-hero-tablet.png);
+    background-position: 350px -50px;
+  }
+  
 }
 
-header {
-  max-width: 1100px;
-  margin: auto;
-}
+@media only screen and (max-width: 376px) {
+  /* Mobile */
 
-footer {
-  background-color: #13183F;
-  height: 120px;
-}
-
-a:link {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  body {
+    background-image: url(../02_CODE/assets/image-hero-mobile.png);
+    background-position: -29px 380px;
+  }
+  
 }
 
 /* 3. LAYOUT
 ======================================== */
+/*  
+ */
 
-.header {
+header {
+  width: 1100px;
+  margin: auto;
+}
+
+
+nav {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -65,32 +76,53 @@ a:link {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  max-width: 45%;
-  height: 40em;
-  margin-bottom: 10em;
-}
-
-.courses {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5em;
-}
-
-.main__content-wrapper {
-  max-width: 1100px;
-  margin: auto;
-}
-
-.footer__content {
   width: 1100px;
+  height: 700px;
+  margin: auto;
+  margin-bottom: 100px;
 }
 
+footer {
+  background-color: #13183F;
+  height: 120px;
+  width: 100%;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    padding: 0px 5%;
+  }
+
+  .hero {
+    width: 90%;
+    height: 500px;
+  }
+
+}
+
+@media only screen and (max-width: 376px) {
+  /* Mobile */
+
+  .hero {
+    align-content: flex-start;
+    padding-top: 20px;
+    height: 600px;
+  }
+
+}
 
 /* 4. TYPOGRAPHY
 ======================================== */
 
 h1 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 3.5rem; /* 56px */
   font-weight: 800;
   color: #13183F;
@@ -98,21 +130,18 @@ h1 {
 }
 
 h2 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 2.5rem; /* 40px */
   font-weight: 800;
   line-height: 1.2;
 }
 
 h3 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 2rem; /* 32px */
   font-weight: 800;
   line-height: 1.2;
 }
 
 h4 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.5rem; /* 24px */
   font-weight: 800;
   color: #13183F;
@@ -120,7 +149,6 @@ h4 {
 }
 
 p {
-  font-family: 'Plus Jakarta Sans', sans-serif; 
   color: #83869A;
   line-height: 1.5;
 }
@@ -128,61 +156,161 @@ p {
 .p--medium {
   font-size: 1.125rem; /* 18px */
   font-weight: 400;
-  color: #83869A;
-  line-height: 1.5;
 }
 
 .p--small {
   font-size: 1rem; /* 16px */
   font-weight: 800;
-  color: #83869A;
-  line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+
+  h1 {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* 24px */
+  }
+  
+
+  .p--medium {
+    font-size: 1rem; /* 16px */
+  }
+
 }
 
 /* 5. MODULE
 ======================================== */
 
-/* Nav */
-.nav__image {
+/* Wrappers */
+
+.full-width-wrapper {
+  width: 100%;
+}
+
+.full-width-wrapper--gradient-background {
+  width: 100%;
+  background:
+  linear-gradient(180deg, #ffffff 0%, #F0F1FF 100%);
+}
+
+.course-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+  .course-wrapper {
+    width: 90%;
+  }
+
+}
+
+/* Header */
+.header__image {
   height: 2em;
 }
 
+.header__nav {
+  width: 1100px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+
+  .header__nav {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 376px) {
+  /* Mobile */
+
+  .header__image {
+    height: 1.5em;
+  }
+
+}
+
 /* Hero */
+
+.hero__column {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 50%;
+}
 
 .hero__title {
   padding-bottom: 1rem;
 }
 
+@media only screen and (max-width: 376px) {
+  /* Mobile */
+
+  .hero__column {
+    width: 100%;
+  }
+
+}
+
 /* Buttons */
+
+.button {
+  padding: 20px 30px;
+  border-radius: 2.5em;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 700;
+  text-decoration: none;
+}
 
 .hero__button {
   background:
   linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-  padding: 20px 30px;
-  margin-top: 40px;
-  border-radius: 2.5em;
-  border: 0;
-  cursor: pointer;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.125rem; /* 18px */
-  font-weight: 700;
   color: #ffffff;
-  text-decoration: none;
+  margin-top: 2rem;
 }
 
-.nav__button {
+.header__button {
   background-color: #13183F;
-  padding: 20px 30px;
-  border-radius: 2.5em;
-  border: 0;
-  cursor: pointer;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.125rem; /* 18px */
-  font-weight: 700;
   color: #ffffff;
-  text-decoration: none;
   margin-left: auto;
 }
+
+.footer__button {
+  background:
+  linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+  color: #ffffff;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+  .button {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  /* Mobile */
+
+  .button {
+    padding: 15px 25px;
+    font-size: 1rem; /* 16px */
+  }
+
+}
+
 
 /* Cards */
 
@@ -192,17 +320,16 @@ p {
   align-content: flex-start;
   flex-direction: column;
   width: 30%;
-  min-height: 18.75em;
+  min-height: 322px;
   background: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   border-radius: 15px;
-  padding: 0 32px 32px 32px;
-  margin-bottom: 4em;
+  padding: 0 28px 32px 28px;
+  margin-bottom: 5em;
 }
 
 .card__first {
   padding: 20px 32px;
-  font-family: 'Plus Jakarta Sans', sans-serif; 
   color: #ffffff;
   background:
   linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -231,8 +358,53 @@ p {
   color: #F74780;
 }
 
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+  .card {
+    width: 49%;
+    min-height: 290px;
+  }
+
+  .card__first {
+    padding-top: 65px;
+  }
+  
+}
+
+@media only screen and (max-width: 376px) {
+  /* Mobile */
+
+  .card {
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .card__first {
+    min-height: 100%;
+    padding: 2em;
+  }
+
+}
+
+/* Footer */
+.footer__nav {
+  width: 1100px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+
+  .footer__nav {
+    width: 100%;
+  }
+
+}
+
 /* 6. STATE
 ======================================== */
+
+/* Buttons */
 
 .hero__button:hover {
   background:
@@ -240,9 +412,17 @@ p {
   linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 }
 
-.nav__button:hover {
+.header__button:hover {
   background-color: #666CA3;
 }
+
+.footer__button:hover {
+  background:
+  linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+  linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+}
+
+/* Links */
 
 .card__link:hover {
   color: #FFA7C3;
