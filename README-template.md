@@ -20,6 +20,7 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 
 ### The challenge
 
+Testing
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
