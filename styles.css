@@ -28,7 +28,7 @@ html {
 
 body {
   margin: 0 auto;
-  background-image: url(../02_CODE/assets/image-hero-desktop.png);
+  background-image: url(assets/image-hero-desktop.png);
   background-repeat: no-repeat;
   background-position: 700px -100px;
 }
@@ -37,7 +37,7 @@ body {
   /* Tablet */
 
   body {
-    background-image: url(../02_CODE/assets/image-hero-tablet.png);
+    background-image: url(assets/image-hero-tablet.png);
     background-position: 350px -50px;
   }
   
@@ -47,7 +47,7 @@ body {
   /* Mobile */
 
   body {
-    background-image: url(../02_CODE/assets/image-hero-mobile.png);
+    background-image: url(assets/image-hero-mobile.png);
     background-position: -29px 380px;
   }
   
@@ -69,7 +69,7 @@ nav {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  min-height: 6em;
+  min-height: 96px;
 }
 
 .hero {
@@ -266,7 +266,7 @@ p {
 
 .button {
   padding: 20px 30px;
-  border-radius: 2.5em;
+  border-radius: 2.5rem;
   border: 0;
   cursor: pointer;
   font-size: 1.125rem; /* 18px */
@@ -278,7 +278,7 @@ p {
   background:
   linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
   color: #ffffff;
-  margin-top: 2rem;
+  margin-top: 32px;
 }
 
 .header__button {
@@ -325,7 +325,7 @@ p {
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   border-radius: 15px;
   padding: 0 28px 32px 28px;
-  margin-bottom: 5em;
+  margin-bottom: 80px;
 }
 
 .card__first {
@@ -349,7 +349,7 @@ p {
 }
 
 .card__title {
-  padding-bottom: 1rem;
+  padding-bottom: 16px;
 }
 
 .card__link {
@@ -381,7 +381,7 @@ p {
 
   .card__first {
     min-height: 100%;
-    padding: 2em;
+    padding: 32px;
   }
 
 }
