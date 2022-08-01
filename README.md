@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/patriciadiasdesousa/e-learning-landing-page]
-- Live Site URL: [https://raw.githack.com/patriciadiasdesousa/e-learning-landing-page/master/index.html]
+- Live Site URL: [https://coruscating-dasik-7a2d61.netlify.app/]
 
 ## My process
 
@@ -69,7 +69,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png] I printed this cheatsheet to hreference some CSS Flexbox properties
+- [https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png] Cheatsheet to reference some CSS Flexbox properties
+- [http://smacss.com/] SMACSS architecture e-book
 
 ## Author
 
