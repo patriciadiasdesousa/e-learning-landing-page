@@ -44,42 +44,35 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- How to use a CSS architecture framework to organize styles in a way that is flexible but easy to reference. I adapted the SMACSS architecture to my project by creating a specific section for RESET and TYPOGRAPHY Rules.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+
+/* Site Stylesheet
+  1. RESET
+  2. BASE
+  3. LAYOUT
+  4. TYPOGRAPHY
+  5. MODULE
+  6. STATE
+  */
+  
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- How to adapt BEM methodology naming rules with SMACSS achitecture.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- How to plan the website structure using semantic HTML
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- I want to continue to test BEM and SMACSS together in more complex projects.
 
 ### Useful resources
 
 - [https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png] I printed this cheatsheet to hreference some CSS Flexbox properties
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Medium - [Patricia Dias de Sousa](https://medium.com/@patriciadiasdesousa)
+- Medium - [@patriciadiasdesousa](https://medium.com/@patriciadiasdesousa)
 - Frontend Mentor - [@patriciadiasdesousa](https://www.frontendmentor.io/profile/patriciadiasdesousa)
 - GitHub [@patriciadiasdesousa](https://github.com/patriciadiasdesousa)
