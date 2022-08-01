@@ -65,7 +65,7 @@ Users should be able to:
 
 ### Continued development
 
-- I want to continue to test BEM and SMACSS together in more complex projects.
+- Continue to test BEM and SMACSS together to see how well it adapts with more complex layouts.
 
 ### Useful resources
 
